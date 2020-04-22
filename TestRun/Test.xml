@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Mon Jul 22 09:12:36 2019 as: nmap -p 80,443,8080,8081 -i input.txt -oX test.xml -oG test.og -->
+<nmaprun scanner="nmap" args="nmap -p 80,443,8080,8081 -i input.txt -oX test.xml -oG test.og" start="1563766956" startstr="Mon Jul 22 09:12:36 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="80,443,8080-8081"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1563767395" endtime="1563767551"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="test-test1.org" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<times srtt="0" rttvar="2812" to="100000"/>
+</host>
+<host starttime="1563767395" endtime="1563767567"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.test-test2.com" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<times srtt="0" rttvar="2812" to="100000"/>
+</host>
+<host starttime="1563767395" endtime="1563767563"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="test-test3.com" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<times srtt="0" rttvar="2812" to="100000"/>
+</host>
+<runstats><finished time="1563771425" timestr="Mon Jul 22 10:27:05 2019" elapsed="4470.26" summary="Nmap done at Mon Jul 22 10:27:05 2019; 17684 IP addresses (14963 hosts up) scanned in 4470.26 seconds" exit="success"/><hosts up="14963" down="2721" total="17684"/>
+</runstats>
+</nmaprun>
